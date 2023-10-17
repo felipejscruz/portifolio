@@ -4,28 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Portifólio | Felipe Cruz</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <header>
-    <nav class="menu">
-        <ul>
-            <li> <a href="../portifolio/index.html">Home</a></li>
-            <li> <a href="../portifolio/sobre.html">Sobre</a></li>
-            <li> <a href="../portifolio/projetos.html">Projetos</a></li>
-            <li> <a href="../portifolio/contato.html">Contato</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <div class="portifolio">
+            <h2><a class="home" href="index.html">Portifólio</a></h2>
+        </div>
+        <menu id="menu-ancoras">
+            <ul>
+                <li> <a href="#sobre">Sobre</a></li>
+                <li> <a href="#habilidades">Habilidades</a></li>
+                <li> <a href="#projetos">Projetos</a></li>
+                <li> <a href="#contato">Contato</a></li>
+            </ul>
+        </menu>
+    </div>
 </header>
 <body>
-    <div class="container">
+    <section  class="container">
+    <div>
         <div class="apresentacao">
             <h1 class="titulo"> Felipe Cruz</h1>
-            <p class="subtitulo">jr. frontend developer <br> sr. email responder </p>
+            <p class="subtitulo">jr. front-end developer <br> sr. email responder </p>
+        </div>
+        <div class="apresentacao" id="sobre">
+            <h2 class="h2">Sobre mim</h2>
+            <img class="img" src="icones\sobre.png" alt="">
+            <p class="subtitulo">Apaixonado por desenvolvimento mobile, sou egresso do curso técnico em informática para 
+                internet  no IFNMG - Campi Montes Claros-MG.</p>
+        </div>
+        <div class="apresentacao" id="habilidades">
+            <h2 class="h2">Habilidades</h2>
+            <div class="botoes">
+                <button class="botao">
+                    <h3 class="habilidade">Java</h3>
+                    <img src="icones\java.png.png" alt="">
+                </button>
+                <button class="botao">
+                    <h3>HTML5</h3>
+                    <img src="icones\html.png.png" alt="">
+                </button>
+                <button class="botao">
+                    <h3>CSS3</h3>
+                    <img src="icones\css.png.png" alt="">
+                </button>
+            </div>
+            <div class="apresentacao" id="projetos">
+                <h2 class="h2">Projetos</h2>
+                <img class="img" src="icones\desenvolvendo.png" alt="">
+                <p class="subtitulo"> Em desenvolvimento...</p>
+            </div>
+            <div class="apresentacao" id="contato">
+                <h2 class="h2">Contatos</h2>
+                <ul class="contatos">
+                    <li>
+                        <img src="icones\email.png" alt="">
+                        <a href="cruzfelipe.contato@gmail.com">e-mail</a>
+                    </li>
+                    <li>
+                        <img src="icones\linkedin.png" alt="">
+                        <a href="#">Linkedln</a>
+                    </li>
+                    <li>
+                        <img src="icones\github.png" alt="">
+                        <a href="#">Github</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
         </div>
     </div>
-    
+</section>
 
 </body>
 </html>

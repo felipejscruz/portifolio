@@ -1,49 +1,69 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
-    font-family: Arial;
+    font-family: arial;
     text-align: center;
-    background-color: rgb(2, 2, 14);
+    background-color: rgb(26, 28, 75);
 }
 
-.menu{
+header{
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+header .container{
     background-color: rgb(197, 197, 197);
     width: 100vw;
     padding: 10px;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
-.menu li{
-    list-style: none;
-}
-
-.menu a{
+.home{
     text-decoration: none;
     color: black;
-
 }
 
-.menu a:hover{
-    color: white;
+.portifolio{
+    padding: 10px;
     
-
 }
 
-.menu ul{
+
+#menu-ancoras ul{
+    list-style: none;
     display: flex;
-    justify-content: space-around;
 }
 
-.container {
+#menu-ancoras ul li a{
+    text-decoration: none;
+    color: black;
+    padding-right: 30px;
+}
+
+#menu-ancoras ul li a:hover{
+    color: white;
+
+}
+
+
+body section .container {
     width: 100vw;
     
 }
 
 .apresentacao{
     margin: 10%;
+    padding-bottom: 20%;
+    padding-top: 15%;
 }
 
 .titulo{
@@ -56,3 +76,63 @@ body{
     color: rgb(126, 125, 125);
 }
 
+.botoes{
+    padding: 15px;
+    align-items: center;
+
+}
+
+.botoes .botao{
+    position: relative;
+    text-align: center;
+    background-color: rgb(56, 56, 56);
+    width: 10em;
+    aspect-ratio: 1;
+    padding: 0;
+    border-radius: 30px;
+
+}
+
+.botoes .botao h3{
+    padding: 10px;
+    
+}
+
+.botoes .botao img{
+    width: 70px;
+}
+
+.h2{
+    color: rgb(207, 207, 207);
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+#sobre {
+    margin: 5%;
+}
+
+.contatos{
+    list-style: none;
+    
+}
+
+.contatos li{
+    padding-top: 10px;
+}
+
+.contatos li img{
+    width: 20px;
+    
+}
+
+.contatos li a{
+    text-decoration: none;
+    color: gray;
+}
+
+.img{
+    width: 150px;
+    padding-bottom: 20px;
+}
